@@ -1,0 +1,564 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="O_BEBUMModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="TB_ENDERE">
+          <Key>
+            <PropertyRef Name="ENDE_ID" />
+          </Key>
+          <Property Name="ENDE_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ENDE_LOGRAD" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="ENDE_NUMERO" Type="varchar" MaxLength="5" Nullable="false" />
+          <Property Name="ENDE_CEP" Type="varchar" MaxLength="8" Nullable="false" />
+          <Property Name="ENDE_COMPLE" Type="varchar" MaxLength="25" />
+          <Property Name="ENDE_BAIRRO" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="ENDE_CIDADE" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="ENDE_ESTADO" Type="varchar" MaxLength="19" Nullable="false" />
+          <Property Name="ENDE_REFERE" Type="varchar" MaxLength="50" />
+          <Property Name="PESS_ID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TB_ITEM">
+          <Key>
+            <PropertyRef Name="ITEM_ID" />
+          </Key>
+          <Property Name="ITEM_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ITEM_NOME" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="ITEM_VALOR" Type="numeric" Precision="6" Scale="2" Nullable="false" />
+          <Property Name="ITEM_PERALC" Type="numeric" Precision="4" Scale="2" Nullable="false" />
+          <Property Name="ITEM_UNMEDI" Type="varchar" MaxLength="3" Nullable="false" />
+          <Property Name="ITEM_ESTOQU" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TB_ITEPED">
+          <Key>
+            <PropertyRef Name="ITEP_ID" />
+          </Key>
+          <Property Name="ITEP_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ITEP_QTDITE" Type="int" Nullable="false" />
+          <Property Name="ITEP_VLRITE" Type="numeric" Precision="6" Scale="2" Nullable="false" />
+          <Property Name="ITEP_VLRPED" Type="numeric" Precision="6" Scale="2" Nullable="false" />
+          <Property Name="ITEM_ID" Type="int" Nullable="false" />
+          <Property Name="PEDI_ID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TB_NOTICI">
+          <Key>
+            <PropertyRef Name="NOTI_ID" />
+          </Key>
+          <Property Name="NOTI_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NOTI_TITULO" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="NOTI_TEXTO" Type="ntext" Nullable="false" />
+          <Property Name="NOTI_DATA" Type="datetime" Nullable="false" />
+          <Property Name="PESS_ID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TB_PAGAME">
+          <Key>
+            <PropertyRef Name="PAGA_ID" />
+          </Key>
+          <Property Name="PAGA_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PAGA_NOME" Type="varchar" MaxLength="25" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TB_PEDIDO">
+          <Key>
+            <PropertyRef Name="PEDI_ID" />
+          </Key>
+          <Property Name="PEDI_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PEDI_DATA" Type="datetime" Nullable="false" />
+          <Property Name="PESS_ID" Type="int" Nullable="false" />
+          <Property Name="PAGA_ID" Type="int" Nullable="false" />
+          <Property Name="PLPA_ID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TB_PESSOA">
+          <Key>
+            <PropertyRef Name="PESS_ID" />
+          </Key>
+          <Property Name="PESS_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PESS_NOME" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="PESS_DTNASC" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="PESS_CPF" Type="varchar" MaxLength="11" Nullable="false" />
+          <Property Name="PESS_EMAIL" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="PESS_SENHA" Type="varchar" MaxLength="8" Nullable="false" />
+          <Property Name="PESS_FONE" Type="varchar" MaxLength="11" Nullable="false" />
+          <Property Name="PESS_TIPO" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TB_PLPAGA">
+          <Key>
+            <PropertyRef Name="PLPA_ID" />
+          </Key>
+          <Property Name="PLPA_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PLPA_NOME" Type="varchar" MaxLength="25" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_ITEM_ID_TB_ITEM_TB_ITEPED">
+          <End Role="TB_ITEM" Type="Self.TB_ITEM" Multiplicity="1" />
+          <End Role="TB_ITEPED" Type="Self.TB_ITEPED" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_ITEM">
+              <PropertyRef Name="ITEM_ID" />
+            </Principal>
+            <Dependent Role="TB_ITEPED">
+              <PropertyRef Name="ITEM_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PAGA_ID_TB_PAGAME_TB_PEDIDO">
+          <End Role="TB_PAGAME" Type="Self.TB_PAGAME" Multiplicity="1" />
+          <End Role="TB_PEDIDO" Type="Self.TB_PEDIDO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_PAGAME">
+              <PropertyRef Name="PAGA_ID" />
+            </Principal>
+            <Dependent Role="TB_PEDIDO">
+              <PropertyRef Name="PAGA_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PEDI_ID_TB_PEDIDO_TB_ITEPED">
+          <End Role="TB_PEDIDO" Type="Self.TB_PEDIDO" Multiplicity="1" />
+          <End Role="TB_ITEPED" Type="Self.TB_ITEPED" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_PEDIDO">
+              <PropertyRef Name="PEDI_ID" />
+            </Principal>
+            <Dependent Role="TB_ITEPED">
+              <PropertyRef Name="PEDI_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PESS_ID_TB_PESSOA_TB_ENDERE">
+          <End Role="TB_PESSOA" Type="Self.TB_PESSOA" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="TB_ENDERE" Type="Self.TB_ENDERE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_PESSOA">
+              <PropertyRef Name="PESS_ID" />
+            </Principal>
+            <Dependent Role="TB_ENDERE">
+              <PropertyRef Name="PESS_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PESS_ID_TB_PESSOA_TB_NOTICI">
+          <End Role="TB_PESSOA" Type="Self.TB_PESSOA" Multiplicity="1" />
+          <End Role="TB_NOTICI" Type="Self.TB_NOTICI" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_PESSOA">
+              <PropertyRef Name="PESS_ID" />
+            </Principal>
+            <Dependent Role="TB_NOTICI">
+              <PropertyRef Name="PESS_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PESS_ID_TB_PESSOA_TB_PEDIDO">
+          <End Role="TB_PESSOA" Type="Self.TB_PESSOA" Multiplicity="1" />
+          <End Role="TB_PEDIDO" Type="Self.TB_PEDIDO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_PESSOA">
+              <PropertyRef Name="PESS_ID" />
+            </Principal>
+            <Dependent Role="TB_PEDIDO">
+              <PropertyRef Name="PESS_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PLPA_ID_TB_PLPAGA_TB_PEDIDO">
+          <End Role="TB_PLPAGA" Type="Self.TB_PLPAGA" Multiplicity="1" />
+          <End Role="TB_PEDIDO" Type="Self.TB_PEDIDO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_PLPAGA">
+              <PropertyRef Name="PLPA_ID" />
+            </Principal>
+            <Dependent Role="TB_PEDIDO">
+              <PropertyRef Name="PLPA_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="O_BEBUMModelStoreContainer">
+          <EntitySet Name="TB_ENDERE" EntityType="Self.TB_ENDERE" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TB_ITEM" EntityType="Self.TB_ITEM" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TB_ITEPED" EntityType="Self.TB_ITEPED" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TB_NOTICI" EntityType="Self.TB_NOTICI" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TB_PAGAME" EntityType="Self.TB_PAGAME" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TB_PEDIDO" EntityType="Self.TB_PEDIDO" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TB_PESSOA" EntityType="Self.TB_PESSOA" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TB_PLPAGA" EntityType="Self.TB_PLPAGA" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_ITEM_ID_TB_ITEM_TB_ITEPED" Association="Self.FK_ITEM_ID_TB_ITEM_TB_ITEPED">
+            <End Role="TB_ITEM" EntitySet="TB_ITEM" />
+            <End Role="TB_ITEPED" EntitySet="TB_ITEPED" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PAGA_ID_TB_PAGAME_TB_PEDIDO" Association="Self.FK_PAGA_ID_TB_PAGAME_TB_PEDIDO">
+            <End Role="TB_PAGAME" EntitySet="TB_PAGAME" />
+            <End Role="TB_PEDIDO" EntitySet="TB_PEDIDO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PEDI_ID_TB_PEDIDO_TB_ITEPED" Association="Self.FK_PEDI_ID_TB_PEDIDO_TB_ITEPED">
+            <End Role="TB_PEDIDO" EntitySet="TB_PEDIDO" />
+            <End Role="TB_ITEPED" EntitySet="TB_ITEPED" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PESS_ID_TB_PESSOA_TB_ENDERE" Association="Self.FK_PESS_ID_TB_PESSOA_TB_ENDERE">
+            <End Role="TB_PESSOA" EntitySet="TB_PESSOA" />
+            <End Role="TB_ENDERE" EntitySet="TB_ENDERE" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PESS_ID_TB_PESSOA_TB_NOTICI" Association="Self.FK_PESS_ID_TB_PESSOA_TB_NOTICI">
+            <End Role="TB_PESSOA" EntitySet="TB_PESSOA" />
+            <End Role="TB_NOTICI" EntitySet="TB_NOTICI" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PESS_ID_TB_PESSOA_TB_PEDIDO" Association="Self.FK_PESS_ID_TB_PESSOA_TB_PEDIDO">
+            <End Role="TB_PESSOA" EntitySet="TB_PESSOA" />
+            <End Role="TB_PEDIDO" EntitySet="TB_PEDIDO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PLPA_ID_TB_PLPAGA_TB_PEDIDO" Association="Self.FK_PLPA_ID_TB_PLPAGA_TB_PEDIDO">
+            <End Role="TB_PLPAGA" EntitySet="TB_PLPAGA" />
+            <End Role="TB_PEDIDO" EntitySet="TB_PEDIDO" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="O_BEBUMModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="TB_ENDERE">
+          <Key>
+            <PropertyRef Name="ENDE_ID" />
+          </Key>
+          <Property Name="ENDE_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ENDE_LOGRAD" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ENDE_NUMERO" Type="String" MaxLength="5" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ENDE_CEP" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ENDE_COMPLE" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+          <Property Name="ENDE_BAIRRO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ENDE_CIDADE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ENDE_ESTADO" Type="String" MaxLength="19" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ENDE_REFERE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="PESS_ID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="TB_PESSOA" Relationship="Self.FK_PESS_ID_TB_PESSOA_TB_ENDERE" FromRole="TB_ENDERE" ToRole="TB_PESSOA" />
+        </EntityType>
+        <EntityType Name="TB_ITEM">
+          <Key>
+            <PropertyRef Name="ITEM_ID" />
+          </Key>
+          <Property Name="ITEM_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ITEM_NOME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ITEM_VALOR" Type="Decimal" Precision="6" Scale="2" Nullable="false" />
+          <Property Name="ITEM_PERALC" Type="Decimal" Precision="4" Scale="2" Nullable="false" />
+          <Property Name="ITEM_UNMEDI" Type="String" MaxLength="3" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ITEM_ESTOQU" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="TB_ITEPED" Relationship="Self.FK_ITEM_ID_TB_ITEM_TB_ITEPED" FromRole="TB_ITEM" ToRole="TB_ITEPED" />
+        </EntityType>
+        <EntityType Name="TB_ITEPED">
+          <Key>
+            <PropertyRef Name="ITEP_ID" />
+          </Key>
+          <Property Name="ITEP_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ITEP_QTDITE" Type="Int32" Nullable="false" />
+          <Property Name="ITEP_VLRITE" Type="Decimal" Precision="6" Scale="2" Nullable="false" />
+          <Property Name="ITEP_VLRPED" Type="Decimal" Precision="6" Scale="2" Nullable="false" />
+          <Property Name="ITEM_ID" Type="Int32" Nullable="false" />
+          <Property Name="PEDI_ID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="TB_ITEM" Relationship="Self.FK_ITEM_ID_TB_ITEM_TB_ITEPED" FromRole="TB_ITEPED" ToRole="TB_ITEM" />
+          <NavigationProperty Name="TB_PEDIDO" Relationship="Self.FK_PEDI_ID_TB_PEDIDO_TB_ITEPED" FromRole="TB_ITEPED" ToRole="TB_PEDIDO" />
+        </EntityType>
+        <EntityType Name="TB_NOTICI">
+          <Key>
+            <PropertyRef Name="NOTI_ID" />
+          </Key>
+          <Property Name="NOTI_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NOTI_TITULO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="NOTI_TEXTO" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="NOTI_DATA" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="PESS_ID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="TB_PESSOA" Relationship="Self.FK_PESS_ID_TB_PESSOA_TB_NOTICI" FromRole="TB_NOTICI" ToRole="TB_PESSOA" />
+        </EntityType>
+        <EntityType Name="TB_PAGAME">
+          <Key>
+            <PropertyRef Name="PAGA_ID" />
+          </Key>
+          <Property Name="PAGA_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PAGA_NOME" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="TB_PEDIDO" Relationship="Self.FK_PAGA_ID_TB_PAGAME_TB_PEDIDO" FromRole="TB_PAGAME" ToRole="TB_PEDIDO" />
+        </EntityType>
+        <EntityType Name="TB_PEDIDO">
+          <Key>
+            <PropertyRef Name="PEDI_ID" />
+          </Key>
+          <Property Name="PEDI_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PEDI_DATA" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="PESS_ID" Type="Int32" Nullable="false" />
+          <Property Name="PAGA_ID" Type="Int32" Nullable="false" />
+          <Property Name="PLPA_ID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="TB_ITEPED" Relationship="Self.FK_PEDI_ID_TB_PEDIDO_TB_ITEPED" FromRole="TB_PEDIDO" ToRole="TB_ITEPED" />
+          <NavigationProperty Name="TB_PAGAME" Relationship="Self.FK_PAGA_ID_TB_PAGAME_TB_PEDIDO" FromRole="TB_PEDIDO" ToRole="TB_PAGAME" />
+          <NavigationProperty Name="TB_PESSOA" Relationship="Self.FK_PESS_ID_TB_PESSOA_TB_PEDIDO" FromRole="TB_PEDIDO" ToRole="TB_PESSOA" />
+          <NavigationProperty Name="TB_PLPAGA" Relationship="Self.FK_PLPA_ID_TB_PLPAGA_TB_PEDIDO" FromRole="TB_PEDIDO" ToRole="TB_PLPAGA" />
+        </EntityType>
+        <EntityType Name="TB_PESSOA">
+          <Key>
+            <PropertyRef Name="PESS_ID" />
+          </Key>
+          <Property Name="PESS_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PESS_NOME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PESS_DTNASC" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PESS_CPF" Type="String" MaxLength="11" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PESS_EMAIL" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PESS_SENHA" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PESS_FONE" Type="String" MaxLength="11" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PESS_TIPO" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="TB_ENDERE" Relationship="Self.FK_PESS_ID_TB_PESSOA_TB_ENDERE" FromRole="TB_PESSOA" ToRole="TB_ENDERE" />
+          <NavigationProperty Name="TB_NOTICI" Relationship="Self.FK_PESS_ID_TB_PESSOA_TB_NOTICI" FromRole="TB_PESSOA" ToRole="TB_NOTICI" />
+          <NavigationProperty Name="TB_PEDIDO" Relationship="Self.FK_PESS_ID_TB_PESSOA_TB_PEDIDO" FromRole="TB_PESSOA" ToRole="TB_PEDIDO" />
+        </EntityType>
+        <EntityType Name="TB_PLPAGA">
+          <Key>
+            <PropertyRef Name="PLPA_ID" />
+          </Key>
+          <Property Name="PLPA_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PLPA_NOME" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="TB_PEDIDO" Relationship="Self.FK_PLPA_ID_TB_PLPAGA_TB_PEDIDO" FromRole="TB_PLPAGA" ToRole="TB_PEDIDO" />
+        </EntityType>
+        <Association Name="FK_PESS_ID_TB_PESSOA_TB_ENDERE">
+          <End Role="TB_PESSOA" Type="Self.TB_PESSOA" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="TB_ENDERE" Type="Self.TB_ENDERE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_PESSOA">
+              <PropertyRef Name="PESS_ID" />
+            </Principal>
+            <Dependent Role="TB_ENDERE">
+              <PropertyRef Name="PESS_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ITEM_ID_TB_ITEM_TB_ITEPED">
+          <End Role="TB_ITEM" Type="Self.TB_ITEM" Multiplicity="1" />
+          <End Role="TB_ITEPED" Type="Self.TB_ITEPED" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_ITEM">
+              <PropertyRef Name="ITEM_ID" />
+            </Principal>
+            <Dependent Role="TB_ITEPED">
+              <PropertyRef Name="ITEM_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PEDI_ID_TB_PEDIDO_TB_ITEPED">
+          <End Role="TB_PEDIDO" Type="Self.TB_PEDIDO" Multiplicity="1" />
+          <End Role="TB_ITEPED" Type="Self.TB_ITEPED" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_PEDIDO">
+              <PropertyRef Name="PEDI_ID" />
+            </Principal>
+            <Dependent Role="TB_ITEPED">
+              <PropertyRef Name="PEDI_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PESS_ID_TB_PESSOA_TB_NOTICI">
+          <End Role="TB_PESSOA" Type="Self.TB_PESSOA" Multiplicity="1" />
+          <End Role="TB_NOTICI" Type="Self.TB_NOTICI" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_PESSOA">
+              <PropertyRef Name="PESS_ID" />
+            </Principal>
+            <Dependent Role="TB_NOTICI">
+              <PropertyRef Name="PESS_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PAGA_ID_TB_PAGAME_TB_PEDIDO">
+          <End Role="TB_PAGAME" Type="Self.TB_PAGAME" Multiplicity="1" />
+          <End Role="TB_PEDIDO" Type="Self.TB_PEDIDO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_PAGAME">
+              <PropertyRef Name="PAGA_ID" />
+            </Principal>
+            <Dependent Role="TB_PEDIDO">
+              <PropertyRef Name="PAGA_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PESS_ID_TB_PESSOA_TB_PEDIDO">
+          <End Role="TB_PESSOA" Type="Self.TB_PESSOA" Multiplicity="1" />
+          <End Role="TB_PEDIDO" Type="Self.TB_PEDIDO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_PESSOA">
+              <PropertyRef Name="PESS_ID" />
+            </Principal>
+            <Dependent Role="TB_PEDIDO">
+              <PropertyRef Name="PESS_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PLPA_ID_TB_PLPAGA_TB_PEDIDO">
+          <End Role="TB_PLPAGA" Type="Self.TB_PLPAGA" Multiplicity="1" />
+          <End Role="TB_PEDIDO" Type="Self.TB_PEDIDO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_PLPAGA">
+              <PropertyRef Name="PLPA_ID" />
+            </Principal>
+            <Dependent Role="TB_PEDIDO">
+              <PropertyRef Name="PLPA_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="O_BEBUMEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="TB_ENDERE" EntityType="Self.TB_ENDERE" />
+          <EntitySet Name="TB_ITEM" EntityType="Self.TB_ITEM" />
+          <EntitySet Name="TB_ITEPED" EntityType="Self.TB_ITEPED" />
+          <EntitySet Name="TB_NOTICI" EntityType="Self.TB_NOTICI" />
+          <EntitySet Name="TB_PAGAME" EntityType="Self.TB_PAGAME" />
+          <EntitySet Name="TB_PEDIDO" EntityType="Self.TB_PEDIDO" />
+          <EntitySet Name="TB_PESSOA" EntityType="Self.TB_PESSOA" />
+          <EntitySet Name="TB_PLPAGA" EntityType="Self.TB_PLPAGA" />
+          <AssociationSet Name="FK_PESS_ID_TB_PESSOA_TB_ENDERE" Association="Self.FK_PESS_ID_TB_PESSOA_TB_ENDERE">
+            <End Role="TB_PESSOA" EntitySet="TB_PESSOA" />
+            <End Role="TB_ENDERE" EntitySet="TB_ENDERE" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ITEM_ID_TB_ITEM_TB_ITEPED" Association="Self.FK_ITEM_ID_TB_ITEM_TB_ITEPED">
+            <End Role="TB_ITEM" EntitySet="TB_ITEM" />
+            <End Role="TB_ITEPED" EntitySet="TB_ITEPED" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PEDI_ID_TB_PEDIDO_TB_ITEPED" Association="Self.FK_PEDI_ID_TB_PEDIDO_TB_ITEPED">
+            <End Role="TB_PEDIDO" EntitySet="TB_PEDIDO" />
+            <End Role="TB_ITEPED" EntitySet="TB_ITEPED" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PESS_ID_TB_PESSOA_TB_NOTICI" Association="Self.FK_PESS_ID_TB_PESSOA_TB_NOTICI">
+            <End Role="TB_PESSOA" EntitySet="TB_PESSOA" />
+            <End Role="TB_NOTICI" EntitySet="TB_NOTICI" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PAGA_ID_TB_PAGAME_TB_PEDIDO" Association="Self.FK_PAGA_ID_TB_PAGAME_TB_PEDIDO">
+            <End Role="TB_PAGAME" EntitySet="TB_PAGAME" />
+            <End Role="TB_PEDIDO" EntitySet="TB_PEDIDO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PESS_ID_TB_PESSOA_TB_PEDIDO" Association="Self.FK_PESS_ID_TB_PESSOA_TB_PEDIDO">
+            <End Role="TB_PESSOA" EntitySet="TB_PESSOA" />
+            <End Role="TB_PEDIDO" EntitySet="TB_PEDIDO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PLPA_ID_TB_PLPAGA_TB_PEDIDO" Association="Self.FK_PLPA_ID_TB_PLPAGA_TB_PEDIDO">
+            <End Role="TB_PLPAGA" EntitySet="TB_PLPAGA" />
+            <End Role="TB_PEDIDO" EntitySet="TB_PEDIDO" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="O_BEBUMModelStoreContainer" CdmEntityContainer="O_BEBUMEntities">
+          <EntitySetMapping Name="TB_ENDERE">
+            <EntityTypeMapping TypeName="O_BEBUMModel.TB_ENDERE">
+              <MappingFragment StoreEntitySet="TB_ENDERE">
+                <ScalarProperty Name="ENDE_ID" ColumnName="ENDE_ID" />
+                <ScalarProperty Name="ENDE_LOGRAD" ColumnName="ENDE_LOGRAD" />
+                <ScalarProperty Name="ENDE_NUMERO" ColumnName="ENDE_NUMERO" />
+                <ScalarProperty Name="ENDE_CEP" ColumnName="ENDE_CEP" />
+                <ScalarProperty Name="ENDE_COMPLE" ColumnName="ENDE_COMPLE" />
+                <ScalarProperty Name="ENDE_BAIRRO" ColumnName="ENDE_BAIRRO" />
+                <ScalarProperty Name="ENDE_CIDADE" ColumnName="ENDE_CIDADE" />
+                <ScalarProperty Name="ENDE_ESTADO" ColumnName="ENDE_ESTADO" />
+                <ScalarProperty Name="ENDE_REFERE" ColumnName="ENDE_REFERE" />
+                <ScalarProperty Name="PESS_ID" ColumnName="PESS_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TB_ITEM">
+            <EntityTypeMapping TypeName="O_BEBUMModel.TB_ITEM">
+              <MappingFragment StoreEntitySet="TB_ITEM">
+                <ScalarProperty Name="ITEM_ID" ColumnName="ITEM_ID" />
+                <ScalarProperty Name="ITEM_NOME" ColumnName="ITEM_NOME" />
+                <ScalarProperty Name="ITEM_VALOR" ColumnName="ITEM_VALOR" />
+                <ScalarProperty Name="ITEM_PERALC" ColumnName="ITEM_PERALC" />
+                <ScalarProperty Name="ITEM_UNMEDI" ColumnName="ITEM_UNMEDI" />
+                <ScalarProperty Name="ITEM_ESTOQU" ColumnName="ITEM_ESTOQU" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TB_ITEPED">
+            <EntityTypeMapping TypeName="O_BEBUMModel.TB_ITEPED">
+              <MappingFragment StoreEntitySet="TB_ITEPED">
+                <ScalarProperty Name="ITEP_ID" ColumnName="ITEP_ID" />
+                <ScalarProperty Name="ITEP_QTDITE" ColumnName="ITEP_QTDITE" />
+                <ScalarProperty Name="ITEP_VLRITE" ColumnName="ITEP_VLRITE" />
+                <ScalarProperty Name="ITEP_VLRPED" ColumnName="ITEP_VLRPED" />
+                <ScalarProperty Name="ITEM_ID" ColumnName="ITEM_ID" />
+                <ScalarProperty Name="PEDI_ID" ColumnName="PEDI_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TB_NOTICI">
+            <EntityTypeMapping TypeName="O_BEBUMModel.TB_NOTICI">
+              <MappingFragment StoreEntitySet="TB_NOTICI">
+                <ScalarProperty Name="NOTI_ID" ColumnName="NOTI_ID" />
+                <ScalarProperty Name="NOTI_TITULO" ColumnName="NOTI_TITULO" />
+                <ScalarProperty Name="NOTI_TEXTO" ColumnName="NOTI_TEXTO" />
+                <ScalarProperty Name="NOTI_DATA" ColumnName="NOTI_DATA" />
+                <ScalarProperty Name="PESS_ID" ColumnName="PESS_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TB_PAGAME">
+            <EntityTypeMapping TypeName="O_BEBUMModel.TB_PAGAME">
+              <MappingFragment StoreEntitySet="TB_PAGAME">
+                <ScalarProperty Name="PAGA_ID" ColumnName="PAGA_ID" />
+                <ScalarProperty Name="PAGA_NOME" ColumnName="PAGA_NOME" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TB_PEDIDO">
+            <EntityTypeMapping TypeName="O_BEBUMModel.TB_PEDIDO">
+              <MappingFragment StoreEntitySet="TB_PEDIDO">
+                <ScalarProperty Name="PEDI_ID" ColumnName="PEDI_ID" />
+                <ScalarProperty Name="PEDI_DATA" ColumnName="PEDI_DATA" />
+                <ScalarProperty Name="PESS_ID" ColumnName="PESS_ID" />
+                <ScalarProperty Name="PAGA_ID" ColumnName="PAGA_ID" />
+                <ScalarProperty Name="PLPA_ID" ColumnName="PLPA_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TB_PESSOA">
+            <EntityTypeMapping TypeName="O_BEBUMModel.TB_PESSOA">
+              <MappingFragment StoreEntitySet="TB_PESSOA">
+                <ScalarProperty Name="PESS_ID" ColumnName="PESS_ID" />
+                <ScalarProperty Name="PESS_NOME" ColumnName="PESS_NOME" />
+                <ScalarProperty Name="PESS_DTNASC" ColumnName="PESS_DTNASC" />
+                <ScalarProperty Name="PESS_CPF" ColumnName="PESS_CPF" />
+                <ScalarProperty Name="PESS_EMAIL" ColumnName="PESS_EMAIL" />
+                <ScalarProperty Name="PESS_SENHA" ColumnName="PESS_SENHA" />
+                <ScalarProperty Name="PESS_FONE" ColumnName="PESS_FONE" />
+                <ScalarProperty Name="PESS_TIPO" ColumnName="PESS_TIPO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TB_PLPAGA">
+            <EntityTypeMapping TypeName="O_BEBUMModel.TB_PLPAGA">
+              <MappingFragment StoreEntitySet="TB_PLPAGA">
+                <ScalarProperty Name="PLPA_ID" ColumnName="PLPA_ID" />
+                <ScalarProperty Name="PLPA_NOME" ColumnName="PLPA_NOME" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

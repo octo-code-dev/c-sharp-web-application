@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="O_BEBUMModelStoreContainer" CdmEntityContainer="O_BEBUMEntities">
+    <EntitySetMapping Name="TB_ENDERE">
+      <EntityTypeMapping TypeName="O_BEBUMModel.TB_ENDERE">
+        <MappingFragment StoreEntitySet="TB_ENDERE">
+          <ScalarProperty Name="ENDE_ID" ColumnName="ENDE_ID" />
+          <ScalarProperty Name="ENDE_LOGRAD" ColumnName="ENDE_LOGRAD" />
+          <ScalarProperty Name="ENDE_NUMERO" ColumnName="ENDE_NUMERO" />
+          <ScalarProperty Name="ENDE_CEP" ColumnName="ENDE_CEP" />
+          <ScalarProperty Name="ENDE_COMPLE" ColumnName="ENDE_COMPLE" />
+          <ScalarProperty Name="ENDE_BAIRRO" ColumnName="ENDE_BAIRRO" />
+          <ScalarProperty Name="ENDE_CIDADE" ColumnName="ENDE_CIDADE" />
+          <ScalarProperty Name="ENDE_ESTADO" ColumnName="ENDE_ESTADO" />
+          <ScalarProperty Name="ENDE_REFERE" ColumnName="ENDE_REFERE" />
+          <ScalarProperty Name="PESS_ID" ColumnName="PESS_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_ITEM">
+      <EntityTypeMapping TypeName="O_BEBUMModel.TB_ITEM">
+        <MappingFragment StoreEntitySet="TB_ITEM">
+          <ScalarProperty Name="ITEM_ID" ColumnName="ITEM_ID" />
+          <ScalarProperty Name="ITEM_NOME" ColumnName="ITEM_NOME" />
+          <ScalarProperty Name="ITEM_VALOR" ColumnName="ITEM_VALOR" />
+          <ScalarProperty Name="ITEM_PERALC" ColumnName="ITEM_PERALC" />
+          <ScalarProperty Name="ITEM_UNMEDI" ColumnName="ITEM_UNMEDI" />
+          <ScalarProperty Name="ITEM_ESTOQU" ColumnName="ITEM_ESTOQU" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_ITEPED">
+      <EntityTypeMapping TypeName="O_BEBUMModel.TB_ITEPED">
+        <MappingFragment StoreEntitySet="TB_ITEPED">
+          <ScalarProperty Name="ITEP_ID" ColumnName="ITEP_ID" />
+          <ScalarProperty Name="ITEP_QTDITE" ColumnName="ITEP_QTDITE" />
+          <ScalarProperty Name="ITEP_VLRITE" ColumnName="ITEP_VLRITE" />
+          <ScalarProperty Name="ITEP_VLRPED" ColumnName="ITEP_VLRPED" />
+          <ScalarProperty Name="ITEM_ID" ColumnName="ITEM_ID" />
+          <ScalarProperty Name="PEDI_ID" ColumnName="PEDI_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_NOTICI">
+      <EntityTypeMapping TypeName="O_BEBUMModel.TB_NOTICI">
+        <MappingFragment StoreEntitySet="TB_NOTICI">
+          <ScalarProperty Name="NOTI_ID" ColumnName="NOTI_ID" />
+          <ScalarProperty Name="NOTI_TITULO" ColumnName="NOTI_TITULO" />
+          <ScalarProperty Name="NOTI_TEXTO" ColumnName="NOTI_TEXTO" />
+          <ScalarProperty Name="NOTI_DATA" ColumnName="NOTI_DATA" />
+          <ScalarProperty Name="PESS_ID" ColumnName="PESS_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_PAGAME">
+      <EntityTypeMapping TypeName="O_BEBUMModel.TB_PAGAME">
+        <MappingFragment StoreEntitySet="TB_PAGAME">
+          <ScalarProperty Name="PAGA_ID" ColumnName="PAGA_ID" />
+          <ScalarProperty Name="PAGA_NOME" ColumnName="PAGA_NOME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_PEDIDO">
+      <EntityTypeMapping TypeName="O_BEBUMModel.TB_PEDIDO">
+        <MappingFragment StoreEntitySet="TB_PEDIDO">
+          <ScalarProperty Name="PEDI_ID" ColumnName="PEDI_ID" />
+          <ScalarProperty Name="PEDI_DATA" ColumnName="PEDI_DATA" />
+          <ScalarProperty Name="PESS_ID" ColumnName="PESS_ID" />
+          <ScalarProperty Name="PAGA_ID" ColumnName="PAGA_ID" />
+          <ScalarProperty Name="PLPA_ID" ColumnName="PLPA_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_PESSOA">
+      <EntityTypeMapping TypeName="O_BEBUMModel.TB_PESSOA">
+        <MappingFragment StoreEntitySet="TB_PESSOA">
+          <ScalarProperty Name="PESS_ID" ColumnName="PESS_ID" />
+          <ScalarProperty Name="PESS_NOME" ColumnName="PESS_NOME" />
+          <ScalarProperty Name="PESS_DTNASC" ColumnName="PESS_DTNASC" />
+          <ScalarProperty Name="PESS_CPF" ColumnName="PESS_CPF" />
+          <ScalarProperty Name="PESS_EMAIL" ColumnName="PESS_EMAIL" />
+          <ScalarProperty Name="PESS_SENHA" ColumnName="PESS_SENHA" />
+          <ScalarProperty Name="PESS_FONE" ColumnName="PESS_FONE" />
+          <ScalarProperty Name="PESS_TIPO" ColumnName="PESS_TIPO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_PLPAGA">
+      <EntityTypeMapping TypeName="O_BEBUMModel.TB_PLPAGA">
+        <MappingFragment StoreEntitySet="TB_PLPAGA">
+          <ScalarProperty Name="PLPA_ID" ColumnName="PLPA_ID" />
+          <ScalarProperty Name="PLPA_NOME" ColumnName="PLPA_NOME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="0d276df1fbd04341b51edf3cc78928a8" Name="Diagram1">
+        <EntityTypeShape EntityType="O_BEBUMModel.TB_ENDERE" Width="1.5" PointX="3" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="O_BEBUMModel.TB_ITEM" Width="1.5" PointX="6" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="O_BEBUMModel.TB_ITEPED" Width="1.5" PointX="8.25" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="O_BEBUMModel.TB_NOTICI" Width="1.5" PointX="3" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="O_BEBUMModel.TB_PAGAME" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="O_BEBUMModel.TB_PEDIDO" Width="1.5" PointX="6" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="O_BEBUMModel.TB_PESSOA" Width="1.5" PointX="0.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="O_BEBUMModel.TB_PLPAGA" Width="1.5" PointX="3.75" PointY="11.125" IsExpanded="true" />
+        <AssociationConnector Association="O_BEBUMModel.FK_PESS_ID_TB_PESSOA_TB_ENDERE" ManuallyRouted="false" />
+        <AssociationConnector Association="O_BEBUMModel.FK_ITEM_ID_TB_ITEM_TB_ITEPED" ManuallyRouted="false" />
+        <AssociationConnector Association="O_BEBUMModel.FK_PEDI_ID_TB_PEDIDO_TB_ITEPED" ManuallyRouted="false" />
+        <AssociationConnector Association="O_BEBUMModel.FK_PESS_ID_TB_PESSOA_TB_NOTICI" ManuallyRouted="false" />
+        <AssociationConnector Association="O_BEBUMModel.FK_PAGA_ID_TB_PAGAME_TB_PEDIDO" ManuallyRouted="false" />
+        <AssociationConnector Association="O_BEBUMModel.FK_PESS_ID_TB_PESSOA_TB_PEDIDO" ManuallyRouted="false" />
+        <AssociationConnector Association="O_BEBUMModel.FK_PLPA_ID_TB_PLPAGA_TB_PEDIDO" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

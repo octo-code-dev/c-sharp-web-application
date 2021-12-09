@@ -1,0 +1,94 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 16/06/2016, 21:23:59
+    Author     : Yukio
+*/
+
+
+body{
+    background-color: #ececec;
+}
+
+.navbar-brand{
+    padding: 8px 4px !important;
+}
+#menu span.tituloSite {
+    font-family: 'Old English Text MT';
+    font-size: 20pt;
+    color: #E2DB9B;
+    text-shadow: 0px 0px 4px rgba(0,0,0,0.8);
+    vertical-align: middle;
+    line-height: 20px;
+    transition: ease-in-out 0.4s;
+}
+#menu .navbar-nav > li > a{
+    line-height: 20px;                   
+    transition: ease-in-out 0.4s;
+}
+#menu:hover .navbar-nav > li > a{
+    line-height: 60px;  
+    transition: ease-in-out 0.4s;
+}
+#menu .navbar-nav > li > span{
+    vertical-align: middle;
+    line-height: 50px;
+    transition: ease-in-out 0.4s;
+}
+#menu .navbar-nav > li > input {
+    vertical-align: middle;
+    line-height: 37px;
+    margin-left: 10px;
+    transition: ease-in-out 0.4s;
+}
+#menu:hover .navbar-nav > li > input{
+    line-height: 78px;  
+    transition: ease-in-out 0.4s;
+}
+#menu:hover .navbar-nav > li > span{
+    line-height: 90px;  
+    transition: ease-in-out 0.4s;
+}
+#menu:hover span.tituloSite{
+    line-height: 60px;  
+    transition: ease-in-out 0.4s;
+}
+
+section#conteudo{
+    margin-top: 70px;
+}
+#ultimaNoticia{
+    padding: 20px;
+}
+ul.noticias img{
+    height: 200px;
+    border-radius: 3px;
+    margin: 20px;
+    box-shadow: 0px 0px 12px 3px rgba(0, 0, 0, 0.5);
+}            
+.media-heading{
+    padding-left: 25px;
+    font-size: 20pt;
+    color: #000;
+}
+.media-body{
+    font-size: 14pt;
+    color: #333;
+}
+ul.noticias a:hover{
+    text-decoration: none;
+}
+.menuProdutos{
+}
+.listaProdutos{
+    /*background-color: tomato;*/
+}
+.listaProdutos .ItemDesc h3{
+    text-align: center;
+}
+.formLogin{
+    
+}

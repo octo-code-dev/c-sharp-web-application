@@ -1,0 +1,176 @@
+C:\Users\user\Documents\Visual Studio 2015\Projects\O_BEBUM\O_BEBUM\bin\roslyn\csc.exe
+C:\Users\user\Documents\Visual Studio 2015\Projects\O_BEBUM\O_BEBUM\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\O_BEBUM\O_BEBUM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\O_BEBUM\O_BEBUM\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\O_BEBUM\O_BEBUM\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\O_BEBUM\O_BEBUM\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\user\Documents\Visual Studio 2015\Projects\O_BEBUM\O_BEBUM\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\user\Documents\Visual Studio 2015\Projects\O_BEBUM\O_BEBUM\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\O_BEBUM\O_BEBUM\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\O_BEBUM\O_BEBUM\bin\roslyn\vbc.exe
+C:\Users\user\Documents\Visual Studio 2015\Projects\O_BEBUM\O_BEBUM\bin\roslyn\VBCSCompiler.exe
+C:\Users\user\Documents\Visual Studio 2015\Projects\O_BEBUM\O_BEBUM\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\user\Documents\Visual Studio 2015\Projects\O_BEBUM\O_BEBUM\bin\O_BEBUM.dll.config
+C:\Users\user\Documents\Visual Studio 2015\Projects\O_BEBUM\O_BEBUM\bin\O_BEBUM.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\O_BEBUM\O_BEBUM\bin\O_BEBUM.pdb
+C:\Users\user\Documents\Visual Studio 2015\Projects\O_BEBUM\O_BEBUM\bin\EntityFramework.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\O_BEBUM\O_BEBUM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\O_BEBUM\O_BEBUM\bin\EntityFramework.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\O_BEBUM\O_BEBUM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\O_BEBUM\O_BEBUM\obj\Debug\O_BEBUM.csprojResolveAssemblyReference.cache
+C:\Users\user\Documents\Visual Studio 2015\Projects\O_BEBUM\O_BEBUM\obj\Debug\O_BEBUM.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\O_BEBUM\O_BEBUM\obj\Debug\O_BEBUM.pdb
+E:\Documents\Yukio\IFSP\2016\DSW\O_BEBUM\O_BEBUM\O_BEBUM\bin\roslyn\csc.exe
+E:\Documents\Yukio\IFSP\2016\DSW\O_BEBUM\O_BEBUM\O_BEBUM\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Documents\Yukio\IFSP\2016\DSW\O_BEBUM\O_BEBUM\O_BEBUM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Documents\Yukio\IFSP\2016\DSW\O_BEBUM\O_BEBUM\O_BEBUM\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Documents\Yukio\IFSP\2016\DSW\O_BEBUM\O_BEBUM\O_BEBUM\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Documents\Yukio\IFSP\2016\DSW\O_BEBUM\O_BEBUM\O_BEBUM\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Documents\Yukio\IFSP\2016\DSW\O_BEBUM\O_BEBUM\O_BEBUM\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Documents\Yukio\IFSP\2016\DSW\O_BEBUM\O_BEBUM\O_BEBUM\bin\roslyn\System.Collections.Immutable.dll
+E:\Documents\Yukio\IFSP\2016\DSW\O_BEBUM\O_BEBUM\O_BEBUM\bin\roslyn\System.Reflection.Metadata.dll
+E:\Documents\Yukio\IFSP\2016\DSW\O_BEBUM\O_BEBUM\O_BEBUM\bin\roslyn\vbc.exe
+E:\Documents\Yukio\IFSP\2016\DSW\O_BEBUM\O_BEBUM\O_BEBUM\bin\roslyn\VBCSCompiler.exe
+E:\Documents\Yukio\IFSP\2016\DSW\O_BEBUM\O_BEBUM\O_BEBUM\bin\roslyn\VBCSCompiler.exe.config
+E:\Documents\Yukio\IFSP\2016\DSW\O_BEBUM\O_BEBUM\O_BEBUM\bin\O_BEBUM.dll.config
+E:\Documents\Yukio\IFSP\2016\DSW\O_BEBUM\O_BEBUM\O_BEBUM\bin\O_BEBUM.dll
+E:\Documents\Yukio\IFSP\2016\DSW\O_BEBUM\O_BEBUM\O_BEBUM\bin\O_BEBUM.pdb
+E:\Documents\Yukio\IFSP\2016\DSW\O_BEBUM\O_BEBUM\O_BEBUM\bin\EntityFramework.dll
+E:\Documents\Yukio\IFSP\2016\DSW\O_BEBUM\O_BEBUM\O_BEBUM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Documents\Yukio\IFSP\2016\DSW\O_BEBUM\O_BEBUM\O_BEBUM\bin\EntityFramework.xml
+E:\Documents\Yukio\IFSP\2016\DSW\O_BEBUM\O_BEBUM\O_BEBUM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Documents\Yukio\IFSP\2016\DSW\O_BEBUM\O_BEBUM\O_BEBUM\obj\Debug\O_BEBUM.csprojResolveAssemblyReference.cache
+E:\Documents\Yukio\IFSP\2016\DSW\O_BEBUM\O_BEBUM\O_BEBUM\obj\Debug\O_BEBUM.dll
+E:\Documents\Yukio\IFSP\2016\DSW\O_BEBUM\O_BEBUM\O_BEBUM\obj\Debug\O_BEBUM.pdb
+C:\Users\user\Desktop\O_BEBUM\O_BEBUM\O_BEBUM\obj\Debug\O_BEBUM.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\O_BEBUM\O_BEBUM\O_BEBUM\obj\Debug\O_BEBUM.dll
+C:\Users\user\Desktop\O_BEBUM\O_BEBUM\O_BEBUM\obj\Debug\O_BEBUM.pdb
+C:\Users\user\Desktop\O_BEBUM\O_BEBUM\O_BEBUM\bin\roslyn\csc.exe
+C:\Users\user\Desktop\O_BEBUM\O_BEBUM\O_BEBUM\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\user\Desktop\O_BEBUM\O_BEBUM\O_BEBUM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\user\Desktop\O_BEBUM\O_BEBUM\O_BEBUM\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\user\Desktop\O_BEBUM\O_BEBUM\O_BEBUM\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\user\Desktop\O_BEBUM\O_BEBUM\O_BEBUM\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\user\Desktop\O_BEBUM\O_BEBUM\O_BEBUM\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\user\Desktop\O_BEBUM\O_BEBUM\O_BEBUM\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\user\Desktop\O_BEBUM\O_BEBUM\O_BEBUM\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\user\Desktop\O_BEBUM\O_BEBUM\O_BEBUM\bin\roslyn\vbc.exe
+C:\Users\user\Desktop\O_BEBUM\O_BEBUM\O_BEBUM\bin\roslyn\VBCSCompiler.exe
+C:\Users\user\Desktop\O_BEBUM\O_BEBUM\O_BEBUM\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\user\Desktop\O_BEBUM\O_BEBUM\O_BEBUM\bin\O_BEBUM.dll.config
+C:\Users\user\Desktop\O_BEBUM\O_BEBUM\O_BEBUM\bin\O_BEBUM.dll
+C:\Users\user\Desktop\O_BEBUM\O_BEBUM\O_BEBUM\bin\O_BEBUM.pdb
+C:\Users\user\Desktop\O_BEBUM\O_BEBUM\O_BEBUM\bin\EntityFramework.dll
+C:\Users\user\Desktop\O_BEBUM\O_BEBUM\O_BEBUM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\user\Desktop\O_BEBUM\O_BEBUM\O_BEBUM\bin\EntityFramework.xml
+C:\Users\user\Desktop\O_BEBUM\O_BEBUM\O_BEBUM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\O_BEBUM\O_BEBUM\O_BEBUM\bin\roslyn\csc.exe
+C:\Users\user\Documents\Visual Studio 2015\Projects\O_BEBUM\O_BEBUM\O_BEBUM\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\O_BEBUM\O_BEBUM\O_BEBUM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\O_BEBUM\O_BEBUM\O_BEBUM\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\O_BEBUM\O_BEBUM\O_BEBUM\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\O_BEBUM\O_BEBUM\O_BEBUM\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\user\Documents\Visual Studio 2015\Projects\O_BEBUM\O_BEBUM\O_BEBUM\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\user\Documents\Visual Studio 2015\Projects\O_BEBUM\O_BEBUM\O_BEBUM\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\O_BEBUM\O_BEBUM\O_BEBUM\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\O_BEBUM\O_BEBUM\O_BEBUM\bin\roslyn\vbc.exe
+C:\Users\user\Documents\Visual Studio 2015\Projects\O_BEBUM\O_BEBUM\O_BEBUM\bin\roslyn\VBCSCompiler.exe
+C:\Users\user\Documents\Visual Studio 2015\Projects\O_BEBUM\O_BEBUM\O_BEBUM\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\user\Documents\Visual Studio 2015\Projects\O_BEBUM\O_BEBUM\O_BEBUM\bin\O_BEBUM.dll.config
+C:\Users\user\Documents\Visual Studio 2015\Projects\O_BEBUM\O_BEBUM\O_BEBUM\bin\O_BEBUM.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\O_BEBUM\O_BEBUM\O_BEBUM\bin\O_BEBUM.pdb
+C:\Users\user\Documents\Visual Studio 2015\Projects\O_BEBUM\O_BEBUM\O_BEBUM\bin\EntityFramework.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\O_BEBUM\O_BEBUM\O_BEBUM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\O_BEBUM\O_BEBUM\O_BEBUM\bin\EntityFramework.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\O_BEBUM\O_BEBUM\O_BEBUM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\O_BEBUM\O_BEBUM\O_BEBUM\obj\Debug\O_BEBUM.csprojResolveAssemblyReference.cache
+C:\Users\user\Documents\Visual Studio 2015\Projects\O_BEBUM\O_BEBUM\O_BEBUM\obj\Debug\O_BEBUM.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\O_BEBUM\O_BEBUM\O_BEBUM\obj\Debug\O_BEBUM.pdb
+C:\Users\user\Documents\Visual Studio 2015\Projects\O_BEBUM\O_BEBUM\O_BEBUM\obj\Debug\RdlCompile.cache
+C:\Users\user\Documents\Visual Studio 2015\Projects\O_BEBUM\O_BEBUM\O_BEBUM\obj\Debug\RdlCompile.compiled
+C:\Users\user\Documents\Visual Studio 2015\Projects\O_BEBUM\O_BEBUM\O_BEBUM\bin\Microsoft.ReportViewer.WebForms.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\O_BEBUM\O_BEBUM\O_BEBUM\bin\Microsoft.SqlServer.Types.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\O_BEBUM\O_BEBUM\O_BEBUM\bin\de\Microsoft.SqlServer.Types.resources.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\O_BEBUM\O_BEBUM\O_BEBUM\bin\es\Microsoft.SqlServer.Types.resources.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\O_BEBUM\O_BEBUM\O_BEBUM\bin\fr\Microsoft.SqlServer.Types.resources.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\O_BEBUM\O_BEBUM\O_BEBUM\bin\it\Microsoft.SqlServer.Types.resources.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\O_BEBUM\O_BEBUM\O_BEBUM\bin\ja\Microsoft.SqlServer.Types.resources.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\O_BEBUM\O_BEBUM\O_BEBUM\bin\ko\Microsoft.SqlServer.Types.resources.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\O_BEBUM\O_BEBUM\O_BEBUM\bin\pt\Microsoft.SqlServer.Types.resources.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\O_BEBUM\O_BEBUM\O_BEBUM\bin\ru\Microsoft.SqlServer.Types.resources.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\O_BEBUM\O_BEBUM\O_BEBUM\bin\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\O_BEBUM\O_BEBUM\O_BEBUM\bin\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Suporte3-pc\Desktop\O_BEBUM\O_BEBUM\O_BEBUM\bin\roslyn\csc.exe
+C:\Users\Suporte3-pc\Desktop\O_BEBUM\O_BEBUM\O_BEBUM\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Suporte3-pc\Desktop\O_BEBUM\O_BEBUM\O_BEBUM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Suporte3-pc\Desktop\O_BEBUM\O_BEBUM\O_BEBUM\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Suporte3-pc\Desktop\O_BEBUM\O_BEBUM\O_BEBUM\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Suporte3-pc\Desktop\O_BEBUM\O_BEBUM\O_BEBUM\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Suporte3-pc\Desktop\O_BEBUM\O_BEBUM\O_BEBUM\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Suporte3-pc\Desktop\O_BEBUM\O_BEBUM\O_BEBUM\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Suporte3-pc\Desktop\O_BEBUM\O_BEBUM\O_BEBUM\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Suporte3-pc\Desktop\O_BEBUM\O_BEBUM\O_BEBUM\bin\roslyn\vbc.exe
+C:\Users\Suporte3-pc\Desktop\O_BEBUM\O_BEBUM\O_BEBUM\bin\roslyn\VBCSCompiler.exe
+C:\Users\Suporte3-pc\Desktop\O_BEBUM\O_BEBUM\O_BEBUM\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Suporte3-pc\Desktop\O_BEBUM\O_BEBUM\O_BEBUM\bin\O_BEBUM.dll.config
+C:\Users\Suporte3-pc\Desktop\O_BEBUM\O_BEBUM\O_BEBUM\bin\O_BEBUM.dll
+C:\Users\Suporte3-pc\Desktop\O_BEBUM\O_BEBUM\O_BEBUM\bin\O_BEBUM.pdb
+C:\Users\Suporte3-pc\Desktop\O_BEBUM\O_BEBUM\O_BEBUM\bin\EntityFramework.dll
+C:\Users\Suporte3-pc\Desktop\O_BEBUM\O_BEBUM\O_BEBUM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Suporte3-pc\Desktop\O_BEBUM\O_BEBUM\O_BEBUM\bin\Microsoft.ReportViewer.WebForms.dll
+C:\Users\Suporte3-pc\Desktop\O_BEBUM\O_BEBUM\O_BEBUM\bin\EntityFramework.xml
+C:\Users\Suporte3-pc\Desktop\O_BEBUM\O_BEBUM\O_BEBUM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Suporte3-pc\Desktop\O_BEBUM\O_BEBUM\O_BEBUM\obj\Debug\O_BEBUM.csprojResolveAssemblyReference.cache
+C:\Users\Suporte3-pc\Desktop\O_BEBUM\O_BEBUM\O_BEBUM\obj\Debug\RdlCompile.cache
+C:\Users\Suporte3-pc\Desktop\O_BEBUM\O_BEBUM\O_BEBUM\obj\Debug\RdlCompile.compiled
+C:\Users\Suporte3-pc\Desktop\O_BEBUM\O_BEBUM\O_BEBUM\obj\Debug\O_BEBUM.dll
+C:\Users\Suporte3-pc\Desktop\O_BEBUM\O_BEBUM\O_BEBUM\obj\Debug\O_BEBUM.pdb
+C:\Users\user\Desktop\O_BEBUM\O_BEBUM\O_BEBUM\bin\Microsoft.ReportViewer.WebForms.dll
+C:\Users\user\Desktop\O_BEBUM\O_BEBUM\O_BEBUM\bin\Microsoft.SqlServer.Types.dll
+C:\Users\user\Desktop\O_BEBUM\O_BEBUM\O_BEBUM\bin\de\Microsoft.SqlServer.Types.resources.dll
+C:\Users\user\Desktop\O_BEBUM\O_BEBUM\O_BEBUM\bin\es\Microsoft.SqlServer.Types.resources.dll
+C:\Users\user\Desktop\O_BEBUM\O_BEBUM\O_BEBUM\bin\fr\Microsoft.SqlServer.Types.resources.dll
+C:\Users\user\Desktop\O_BEBUM\O_BEBUM\O_BEBUM\bin\it\Microsoft.SqlServer.Types.resources.dll
+C:\Users\user\Desktop\O_BEBUM\O_BEBUM\O_BEBUM\bin\ja\Microsoft.SqlServer.Types.resources.dll
+C:\Users\user\Desktop\O_BEBUM\O_BEBUM\O_BEBUM\bin\ko\Microsoft.SqlServer.Types.resources.dll
+C:\Users\user\Desktop\O_BEBUM\O_BEBUM\O_BEBUM\bin\pt\Microsoft.SqlServer.Types.resources.dll
+C:\Users\user\Desktop\O_BEBUM\O_BEBUM\O_BEBUM\bin\ru\Microsoft.SqlServer.Types.resources.dll
+C:\Users\user\Desktop\O_BEBUM\O_BEBUM\O_BEBUM\bin\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+C:\Users\user\Desktop\O_BEBUM\O_BEBUM\O_BEBUM\bin\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+C:\Users\user\Desktop\O_BEBUM\O_BEBUM\O_BEBUM\obj\Debug\RdlCompile.cache
+C:\Users\user\Desktop\O_BEBUM\O_BEBUM\O_BEBUM\obj\Debug\RdlCompile.compiled
+C:\Users\Erich\Downloads\O_BEBUM\O_BEBUM\O_BEBUM\bin\roslyn\csc.exe
+C:\Users\Erich\Downloads\O_BEBUM\O_BEBUM\O_BEBUM\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Erich\Downloads\O_BEBUM\O_BEBUM\O_BEBUM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Erich\Downloads\O_BEBUM\O_BEBUM\O_BEBUM\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Erich\Downloads\O_BEBUM\O_BEBUM\O_BEBUM\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Erich\Downloads\O_BEBUM\O_BEBUM\O_BEBUM\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Erich\Downloads\O_BEBUM\O_BEBUM\O_BEBUM\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Erich\Downloads\O_BEBUM\O_BEBUM\O_BEBUM\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Erich\Downloads\O_BEBUM\O_BEBUM\O_BEBUM\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Erich\Downloads\O_BEBUM\O_BEBUM\O_BEBUM\bin\roslyn\vbc.exe
+C:\Users\Erich\Downloads\O_BEBUM\O_BEBUM\O_BEBUM\bin\roslyn\VBCSCompiler.exe
+C:\Users\Erich\Downloads\O_BEBUM\O_BEBUM\O_BEBUM\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Erich\Downloads\O_BEBUM\O_BEBUM\O_BEBUM\bin\O_BEBUM.dll.config
+C:\Users\Erich\Downloads\O_BEBUM\O_BEBUM\O_BEBUM\bin\O_BEBUM.dll
+C:\Users\Erich\Downloads\O_BEBUM\O_BEBUM\O_BEBUM\bin\O_BEBUM.pdb
+C:\Users\Erich\Downloads\O_BEBUM\O_BEBUM\O_BEBUM\bin\EntityFramework.dll
+C:\Users\Erich\Downloads\O_BEBUM\O_BEBUM\O_BEBUM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Erich\Downloads\O_BEBUM\O_BEBUM\O_BEBUM\bin\EntityFramework.xml
+C:\Users\Erich\Downloads\O_BEBUM\O_BEBUM\O_BEBUM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Erich\Downloads\O_BEBUM\O_BEBUM\O_BEBUM\obj\Debug\O_BEBUM.csproj.CoreCompileInputs.cache
+C:\Users\Erich\Downloads\O_BEBUM\O_BEBUM\O_BEBUM\obj\Debug\O_BEBUM.csproj.CopyComplete
+C:\Users\Erich\Downloads\O_BEBUM\O_BEBUM\O_BEBUM\obj\Debug\O_BEBUM.dll
+C:\Users\Erich\Downloads\O_BEBUM\O_BEBUM\O_BEBUM\obj\Debug\O_BEBUM.pdb
+C:\Users\Erich\Downloads\O_BEBUM\O_BEBUM\O_BEBUM\obj\Debug\O_BEBUM.csproj.AssemblyReference.cache
+C:\Users\Erich\Downloads\O_BEBUM\O_BEBUM\O_BEBUM\bin\Microsoft.SqlServer.Types.dll
+C:\Users\Erich\Downloads\O_BEBUM\O_BEBUM\O_BEBUM\bin\de\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Erich\Downloads\O_BEBUM\O_BEBUM\O_BEBUM\bin\es\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Erich\Downloads\O_BEBUM\O_BEBUM\O_BEBUM\bin\fr\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Erich\Downloads\O_BEBUM\O_BEBUM\O_BEBUM\bin\it\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Erich\Downloads\O_BEBUM\O_BEBUM\O_BEBUM\bin\ja\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Erich\Downloads\O_BEBUM\O_BEBUM\O_BEBUM\bin\ko\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Erich\Downloads\O_BEBUM\O_BEBUM\O_BEBUM\bin\pt\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Erich\Downloads\O_BEBUM\O_BEBUM\O_BEBUM\bin\ru\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Erich\Downloads\O_BEBUM\O_BEBUM\O_BEBUM\bin\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Erich\Downloads\O_BEBUM\O_BEBUM\O_BEBUM\bin\zh-Hant\Microsoft.SqlServer.Types.resources.dll
